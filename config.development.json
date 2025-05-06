@@ -1,0 +1,35 @@
+{
+  "url": "https://www.mhto.in",
+  "server": {
+    "port": 2368,
+    "host": "127.0.0.1"
+  },
+  "database": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "content/data/ghost-local.db"
+    }
+  },
+"mail": {
+    "from": "post2mhto@gmail.com",
+    "transport": "SMTP",
+    "options": {
+      "host": "smtp.gmail.com",
+      "port": 587,
+      "auth": {
+        "user": "post2mhto@gmail.com",
+        "pass": "qunjaynpnhhtqmxy"
+      }
+    }
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "local",
+  "paths": {
+    "contentPath": "content"
+  }
+}
